@@ -1,0 +1,76 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Alexey Skrynnik
+    - name: Place of Work
+      value: Moscow, Russia
+    - name: Languages
+      value: Russian, English
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD
+      institution: Federal Research Center for Computer Science and Control of the Russian Academy of Sciences, Moscow, Russia
+      year: 2023
+      description:
+        - Title of Study/Research is Reinforcement Learning Methods for Navigation Tasks in Visual and Grid Environments.
+        - Defended at the Moscow Institute of Physics and Technology, Dolgoprudny, Russia.
+    - title: Master of Software Engineering
+      institution: Rybinsk State Aviation Technical University, Rybinsk, Russia
+      year: 2017
+#      description:
+#        - ToDo
+    - title: Bachelor of Software Engineering
+      institution: Rybinsk State Aviation Technical University, Rybinsk, Russia
+      year: 2015
+#      description:
+#        - ToDo
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Assistant Lecturer
+      institution: Moscow Institute of Physics and Technology, Phystech School of Applied Mathematics and Informatics, Dolgoprudny, Russia
+      year: 2020 - 2022
+      description:
+        - Seminars on Software Tools for Artificial Intelligence.
+        - Seminars on Reinforcement Learning.
+    - title: Lecturer
+      institution: National Research University Higher School of Economics, Faculty of Computer Science, Moscow, Russia
+      year: 2018 - 2020
+      description:
+        - Seminars on Applied Problems of Data Analysis.
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Research Scientist
+      institution: Artificial Intelligence Research Institute, Neural-symbolic team, Moscow, Russia
+      year: 2021 - Present
+#      description:
+#        - ToDo
+    - title: Junior Research Scientist
+      institution: Federal Research Center “Computer Science and Control” of Russian Academy of Sciences, Moscow, Russia
+      year: 2018 - Present
+#      description:
+#        - ToDo
+
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Reinforcement Learning
+      items:
+        - Deep Reinforcement Learning
+        - Model-Based Learning and Planning
+    - title: Multi-Agent Systems
+      items:
+        - Multi-Agent Reinforcement Learning
+        - Multi-Agent Planning
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Skiing, Chess, Board Games, Football.
