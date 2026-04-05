@@ -18,6 +18,7 @@ const teaching = sections['Teaching'] || [];
 const publications = sections['Selected Publications'] || [];
 
 const connections = cv.custom_connections || [];
+const resumePdf = cv.resume_pdf || '/Alexey_Skrynnik_CV.pdf';
 
 function formatDate(d: string): string {
   if (!d || d === 'present') return 'Present';
@@ -43,6 +44,7 @@ function markdownLinkToHtml(s: string): string {
         <a href="#experience">Experience</a>
         <a href="#publications">Publications</a>
         <a href="#teaching">Teaching</a>
+        <a href={resumePdf} target="_blank" rel="noopener">CV</a>
         <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme"></button>
       </div>
     </div>
@@ -51,8 +53,18 @@ function markdownLinkToHtml(s: string): string {
   <main class="container">
     <!-- HERO CARD -->
     <section class="hero-card">
-      <div class="hero-photo">
-        <img src="/profile.jpg" alt="Alexey Skrynnik" width="400" height="400" />
+      <div class="hero-side">
+        <div class="hero-photo">
+          <img src="/profile.jpg" alt="Alexey Skrynnik" width="400" height="400" />
+        </div>
+        <div class="photo-actions">
+          <a href={resumePdf} target="_blank" rel="noopener" class="photo-action photo-action-primary">
+            View CV
+          </a>
+          <a href={resumePdf} download="Alexey_Skrynnik_CV.pdf" class="photo-action">
+            Download PDF
+          </a>
+        </div>
       </div>
       <div class="hero-info">
         <h1>{cv.name}</h1>
@@ -256,15 +268,66 @@ function markdownLinkToHtml(s: string): string {
     background: var(--bg-alt);
     box-shadow: var(--shadow);
   }
-  .hero-photo {
+  .hero-side {
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 160px;
+  }
+  .hero-photo {
+    width: 100%;
   }
   .hero-photo img {
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
     object-fit: cover;
     display: block;
+  }
+  .photo-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .photo-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44px;
+    padding: 0.7rem 0.95rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--fg);
+    box-shadow: 0 1px 2px color-mix(in srgb, var(--fg) 8%, transparent);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    transition:
+      background-color 200ms ease,
+      border-color 200ms ease,
+      color 200ms ease,
+      box-shadow 240ms ease;
+  }
+  .photo-action:hover {
+    border-color: color-mix(in srgb, var(--accent) 24%, var(--border));
+    color: color-mix(in srgb, var(--accent) 68%, var(--fg));
+    text-decoration: none;
+  }
+  .photo-action-primary {
+    background: color-mix(in srgb, var(--accent) 14%, var(--bg));
+    border-color: color-mix(in srgb, var(--accent) 28%, var(--border));
+    color: color-mix(in srgb, var(--accent) 78%, var(--fg));
+    box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+  .photo-action-primary:hover {
+    background: color-mix(in srgb, var(--accent) 17%, var(--bg));
+    border-color: color-mix(in srgb, var(--accent) 32%, var(--border));
+    color: color-mix(in srgb, var(--accent) 82%, var(--fg));
   }
   .hero-info {
     flex: 1;
@@ -302,19 +365,25 @@ function markdownLinkToHtml(s: string): string {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.3rem 0.75rem;
+    min-height: 40px;
+    padding: 0.55rem 0.8rem;
     background: var(--bg);
     border: 1px solid var(--border);
-    border-radius: 999px;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px color-mix(in srgb, var(--fg) 8%, transparent);
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.01em;
     color: var(--fg);
-    transition: all 0.15s;
+    transition:
+      background-color 200ms ease,
+      border-color 200ms ease,
+      color 200ms ease,
+      box-shadow 240ms ease;
   }
   .link-pill:hover {
-    background: var(--accent);
-    color: #fff;
-    border-color: var(--accent);
+    border-color: color-mix(in srgb, var(--accent) 24%, var(--border));
+    color: color-mix(in srgb, var(--accent) 68%, var(--fg));
     text-decoration: none;
   }
   .link-pill svg {
@@ -490,7 +559,7 @@ function markdownLinkToHtml(s: string): string {
   /* RESPONSIVE */
   @media (max-width: 640px) {
     .hero-card { flex-direction: column; align-items: center; text-align: center; padding: 1.5rem; }
-    .hero-photo img { width: 120px; height: 120px; }
+    .hero-side { width: 180px; }
     .hero-info h1 { font-size: 1.75rem; }
     .links { justify-content: center; }
     .about-text { text-align: left; }

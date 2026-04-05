@@ -4,6 +4,7 @@ cv:
   headline: Senior Research Scientist & Team Lead, AIRI
   location: Moscow, Russia
   email: skrynnikalexey@gmail.com
+  resume_pdf: /Alexey_Skrynnik_CV.pdf
   custom_connections:
     - placeholder: Website
       url: https://tviskaron.github.io
@@ -109,6 +110,7 @@ cv:
           - "**Alexey Skrynnik**"
         journal: IROS 2025
         date: 2025-10
+        url: https://arxiv.org/abs/2506.23793
       - title: "POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pathfinding"
         authors:
           - "**Alexey Skrynnik**"
@@ -141,6 +143,7 @@ cv:
           - Julia Kiseleva
         journal: ACM SIGIR 2025
         date: 2025-01
+        url: https://arxiv.org/abs/2407.08898
       - title: "CrafText Benchmark: Advancing Instruction Following in Complex Multimodal Open-Ended World"
         authors:
           - Zoya Volovikova
@@ -150,6 +153,7 @@ cv:
           - "**Alexey Skrynnik**"
         journal: ACL 2025
         date: 2025-01
+        url: https://aclanthology.org/2025.acl-long.1267/
       - title: "Instruction Following with Goal-Conditioned Reinforcement Learning in Virtual Environments"
         authors:
           - Zoya Volovikova
@@ -158,6 +162,7 @@ cv:
           - Aleksandr I. Panov
         journal: ECAI 2024
         date: 2024-10
+        url: https://arxiv.org/abs/2407.09287
       - title: "Learn to Follow: Decentralized Lifelong Multi-Agent Pathfinding via Planning and Learning"
         authors:
           - "**Alexey Skrynnik**"
@@ -176,6 +181,7 @@ cv:
           - Aleksandr Panov
         journal: AAAI 2024
         date: 2024-01
+        url: https://arxiv.org/abs/2312.15908
       - title: "When to Switch: Planning and Learning for Partially Observable Multi-Agent Pathfinding"
         authors:
           - "**Alexey Skrynnik**"
@@ -184,6 +190,7 @@ cv:
           - Aleksandr Panov
         journal: IEEE TNNLS
         date: 2023-08
+        url: https://doi.org/10.1109/TNNLS.2023.3303502
       - title: "Interactive Grounded Language Understanding in a Collaborative Environment: Retrospective on IGLU 2022 Competition"
         authors:
           - Julia Kiseleva
@@ -195,6 +202,7 @@ cv:
           - et al.
         journal: NeurIPS 2022 Competition Track
         date: 2023-01
+        url: https://proceedings.mlr.press/v220/kiseleva23a.html
 
 design:
   theme: sb2nov
