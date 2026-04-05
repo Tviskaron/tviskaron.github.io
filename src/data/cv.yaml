@@ -1,0 +1,224 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Alexey Skrynnik
+  headline: Senior Research Scientist & Team Lead, AIRI
+  location: Moscow, Russia
+  email: skrynnikalexey@gmail.com
+  custom_connections:
+    - placeholder: Website
+      url: https://tviskaron.github.io
+      fontawesome_icon: link
+    - placeholder: GitHub
+      url: https://github.com/tviskaron
+      fontawesome_icon: github
+    - placeholder: Scholar
+      url: https://scholar.google.com/citations?user=ITgs9IMAAAAJ
+      fontawesome_icon: graduation-cap
+    - placeholder: LinkedIn
+      url: https://linkedin.com/in/alexey-skrynnik
+      fontawesome_icon: linkedin
+  sections:
+    Education:
+      - label: "PhD in AI & Machine Learning"
+        details: "FRC CSC RAS (defended at MIPT), Moscow, Russia, 2023"
+      - label: "MS in Computer Science"
+        details: "Rybinsk State Aviation Technical University, 2015 -- 2017"
+      - label: "BS in Computer Science"
+        details: "Rybinsk State Aviation Technical University, 2011 -- 2015"
+
+    Research Experience:
+      - company: AIRI, Cognitive AI Systems Laboratory
+        position: Senior Research Scientist & Team Lead
+        start_date: 2024-07
+        end_date: present
+        location: Moscow, Russia
+        highlights:
+          - Leading an 8-person research team focused on RL, LLM/multimodal agents, and multi-agent systems
+          - "Supervised ReSCALE, an RL-style tree-search method for LLM test-time reasoning that restores monotonic scaling with larger search budgets without retraining (ICAPS 2026)"
+          - "Led MAPF-GPT, a foundation model for multi-agent pathfinding with zero-shot generalization on unseen maps, outperforming state-of-the-art learnable solvers (AAAI 2025, Oral)"
+#          - "Built CrafText, an ACL 2025 benchmark for multimodal, language-guided agents in open-ended environments"
+      - company: AIRI, Cognitive AI Systems Laboratory
+        position: Research Scientist
+        start_date: 2021-08
+        end_date: 2024-07
+        location: Moscow, Russia
+        highlights:
+          - "Learn to Follow (AAAI 2024, Oral): combined RL and decentralized planning for lifelong multi-agent pathfinding, improving generalization with a 10x speedup over a state-of-the-art search-based solver"
+          - "Decentralized MCTS for partially observable MAPF: first MCTS approach for this setting (AAAI 2024)"
+          - Built and open-sourced POGEMA, a benchmark platform for multi-agent pathfinding, later published at ICLR 2025
+          - RL Track Lead for the IGLU Competition at NeurIPS 2021 and 2022; co-developed benchmarks for collaborative embodied agents in grounded instruction-following Minecraft tasks for human-AI collaboration
+      - company: Federal Research Center for Computer Science and Control, Russian Academy of Sciences
+        position: Junior Research Scientist
+        start_date: 2018-02
+        end_date: 2021-08
+        location: Moscow, Russia
+        highlights:
+          - "1st place at the NeurIPS 2019 MineRL Diamond Competition with a hierarchical RL approach leveraging demonstrations as human priors for long-horizon decision-making in Minecraft; first author and presenter at NeurIPS"
+          - "Researched multi-agent pathfinding, model-based RL, and visual navigation, including hybrid policy learning with classical search; published in IEEE TNNLS, Knowledge-Based Systems, and Cognitive Systems Research"
+
+    Technical Skills:
+      - label: Core Stack
+        details: Python, PyTorch, JAX, C++
+      - label: Research Areas
+        details: Reinforcement Learning, Multi-Agent Systems, Planning/Search, Imitation Learning
+      - label: LLM/Agent Systems
+        details: RL for LLMs, LLM/Multimodal Agents, Test-Time Reasoning, Inference/Evaluation
+      - label: Training/Infrastructure
+        details: Distributed Training, FSDP/DDP, Slurm, Ray, vLLM, VERL, HF Transformers, LoRA/PEFT
+      - label: Languages
+        details: English (advanced), Russian (native)
+
+    Achievements & Service:
+      - bullet: "[Yandex ML-Prize 2024](https://ml-prize.yandex.ru/) -- awarded for research in Reinforcement Learning, Multi-Agent RL, and Multi-Agent Systems"
+      - bullet: "[NeurIPS 2019 MineRL Diamond Competition](https://www.aicrowd.com/challenges/neurips-2019-minerl-competition/leaderboards) -- 1st place in long-horizon RL from demonstrations (2019)"
+      - bullet: "Co-organizer & RL Track Lead: [IGLU Competition](https://www.iglu-contest.net/) at NeurIPS 2021-2022 on grounded instruction following"
+      - bullet: "Reviewing: NeurIPS, ICML, AAAI, ICLR, ACL Rolling Review, JAIR, Nature Communications"
+      # - bullet: "ACM ICPC: [Winner of Central Russia Subregional](https://neerc.ifmo.ru/archive/2015/central/standings.html) (2015); [32nd place at NEERC Regional](https://neerc.ifmo.ru/archive/2016/standings.html) (2016)"
+
+    Teaching:
+      - label: "MSU AI Masters -- Advanced Reinforcement Learning"
+        details: "Lecturer (2025 -- present)"
+      - label: "MIPT -- Reinforcement Learning, Software Tools for AI"
+        details: "Assistant Lecturer (2020 -- 2022)"
+      - label: "HSE -- Applied Problems of Data Analysis"
+        details: "Lecturer (2018 -- 2020)"
+
+    Selected Publications:
+      - title: "Revisiting Tree Search for LLMs: Gumbel and Sequential Halving for Budget-Scalable Reasoning"
+        authors:
+          - Leonid Ugadiarov
+          - Yury Kuratov
+          - Aleksandr Panov
+          - "**Alexey Skrynnik**"
+        journal: ICAPS 2026
+        date: 2026-03
+        url: https://arxiv.org/abs/2603.21162
+      - title: "Camar: Continuous Actions Multi-Agent Routing"
+        authors:
+          - Artem Pshenitsyn
+          - Aleksandr Panov
+          - "**Alexey Skrynnik**"
+        journal: AAAI 2026 (Best Poster Award)
+        date: 2026-01
+        url: https://arxiv.org/abs/2508.12845
+      - title: "Advancing Learnable Multi-Agent Pathfinding Solvers with Active Fine-Tuning"
+        authors:
+          - Anton Andreychuk
+          - Konstantin Yakovlev
+          - Aleksandr Panov
+          - "**Alexey Skrynnik**"
+        journal: IROS 2025
+        date: 2025-10
+      - title: "POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pathfinding"
+        authors:
+          - "**Alexey Skrynnik**"
+          - Anton Andreychuk
+          - Artem Borzilov
+          - Aleksandr Chernyavskiy
+          - Konstantin Yakovlev
+          - Aleksandr Panov
+        journal: ICLR 2025
+        date: 2025-05
+        url: https://openreview.net/forum?id=6VgwE2tCRm
+      - title: "MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at Scale"
+        authors:
+          - Anton Andreychuk
+          - Konstantin Yakovlev
+          - Aleksandr Panov
+          - "**Alexey Skrynnik**"
+        journal: AAAI 2025 (Oral)
+        date: 2025-01
+        url: https://arxiv.org/abs/2409.00134
+      - title: "IDAT: A Multi-Modal Dataset and Toolkit for Building and Evaluating Interactive Task-Solving Agents"
+        authors:
+          - Shrestha Mohanty
+          - Negar Arabzadeh
+          - Andrea Tupini
+          - Yuxuan Sun
+          - "**Alexey Skrynnik**"
+          - Artem Zholus
+          - Marc-Alexandre Cote
+          - Julia Kiseleva
+        journal: ACM SIGIR 2025
+        date: 2025-01
+      - title: "CrafText Benchmark: Advancing Instruction Following in Complex Multimodal Open-Ended World"
+        authors:
+          - Zoya Volovikova
+          - Gregory Gorbov
+          - Petr Kuderov
+          - Aleksandr Panov
+          - "**Alexey Skrynnik**"
+        journal: ACL 2025
+        date: 2025-01
+      - title: "Instruction Following with Goal-Conditioned Reinforcement Learning in Virtual Environments"
+        authors:
+          - Zoya Volovikova
+          - "**Alexey Skrynnik**"
+          - Petr Kuderov
+          - Aleksandr I. Panov
+        journal: ECAI 2024
+        date: 2024-10
+      - title: "Learn to Follow: Decentralized Lifelong Multi-Agent Pathfinding via Planning and Learning"
+        authors:
+          - "**Alexey Skrynnik**"
+          - Anton Andreychuk
+          - Maria Nesterova
+          - Konstantin Yakovlev
+          - Aleksandr Panov
+        journal: AAAI 2024 (Oral)
+        date: 2024-01
+        url: https://arxiv.org/abs/2310.01207
+      - title: "Decentralized Monte Carlo Tree Search for Partially Observable Multi-Agent Pathfinding"
+        authors:
+          - "**Alexey Skrynnik**"
+          - Anton Andreychuk
+          - Konstantin Yakovlev
+          - Aleksandr Panov
+        journal: AAAI 2024
+        date: 2024-01
+      - title: "When to Switch: Planning and Learning for Partially Observable Multi-Agent Pathfinding"
+        authors:
+          - "**Alexey Skrynnik**"
+          - Anton Andreychuk
+          - Konstantin Yakovlev
+          - Aleksandr Panov
+        journal: IEEE TNNLS
+        date: 2023-08
+      - title: "Interactive Grounded Language Understanding in a Collaborative Environment: Retrospective on IGLU 2022 Competition"
+        authors:
+          - Julia Kiseleva
+          - "**Alexey Skrynnik**"
+          - Artem Zholus
+          - Shrestha Mohanty
+          - Negar Arabzadeh
+          - Marc-Alexandre Cote
+          - et al.
+        journal: NeurIPS 2022 Competition Track
+        date: 2023-01
+
+design:
+  theme: sb2nov
+  typography:
+    font_size:
+      name: 22pt
+  header:
+    connections:
+      show_icons: true
+      display_urls_instead_of_usernames: false
+  page:
+    top_margin: 1.2cm
+    bottom_margin: 1.2cm
+    left_margin: 1.2cm
+    right_margin: 1.2cm
+    show_top_note: false
+  templates:
+    publication_entry:
+      main_column: |-
+        **JOURNAL** -- TITLE. AUTHORS
+      date_and_location_column: DATE
+locale:
+  language: english
+settings:
+  current_date: today
+  render_command:
+    output_folder: rendercv_output
