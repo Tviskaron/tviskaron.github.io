@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Alexey Skrynnik
-  headline: Senior Research Scientist & Team Lead, AIRI
+  headline: Principal Research Scientist & Team Lead, AIRI
   location: Moscow, Russia
   email: skrynnikalexey@gmail.com
   resume_pdf: /Alexey_Skrynnik_CV.pdf
@@ -29,7 +29,7 @@ cv:
 
     Research Experience:
       - company: AIRI
-        position: Senior Research Scientist & Team Lead
+        position: Principal Research Scientist & Team Lead
         start_date: 2024-07
         end_date: present
         location: Moscow, Russia
@@ -85,6 +85,30 @@ cv:
         details: "Lecturer (2018 -- 2020)"
 
     Selected Publications:
+      - title: "Self-Guided Plan Extraction for Instruction-Following Tasks with Goal-Conditional Reinforcement Learning"
+        authors:
+          - Zoya Volovikova
+          - Nikita Sorokin
+          - Dmitriy Lukashevskiy
+          - Aleksandr Panov
+          - "**Alexey Skrynnik**"
+        journal: Findings of ACL 2026
+        date: 2026-07
+        url: https://aclanthology.org/2026.findings-acl.1691/
+      - title: "MARL-GPT: Foundation Model for Multi-Agent Reinforcement Learning"
+        authors:
+          - Maria Nesterova
+          - Mikhail Kolosov
+          - Anton Andreychuk
+          - Egor Cherepanov
+          - Oleg Bulichev
+          - Alexey Kovalev
+          - Konstantin Yakovlev
+          - Aleksandr Panov
+          - "**Alexey Skrynnik**"
+        journal: AAMAS 2026
+        date: 2026-05
+        url: https://doi.org/10.65109/BWFP6427
       - title: "Revisiting Tree Search for LLMs: Gumbel and Sequential Halving for Budget-Scalable Reasoning"
         authors:
           - Leonid Ugadiarov
