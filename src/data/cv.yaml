@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Alexey Skrynnik
-  headline: Principal Research Scientist & Team Lead, AIRI
+  headline: Principal Research Scientist, CogAI Lab
   location: Moscow, Russia
   email: skrynnikalexey@gmail.com
   resume_pdf: /Alexey_Skrynnik_CV.pdf
@@ -19,23 +19,22 @@ cv:
       url: https://linkedin.com/in/alexey-skrynnik
       fontawesome_icon: linkedin
   sections:
-    Education:
-      - label: "PhD in AI & Machine Learning"
-        details: "FRC CSC RAS (defended at MIPT), Moscow, Russia, 2023"
-      - label: "MS in Computer Science"
-        details: "Rybinsk State Aviation Technical University, 2015 -- 2017"
-      - label: "BS in Computer Science"
-        details: "Rybinsk State Aviation Technical University, 2011 -- 2015"
-
     Research Experience:
-      - company: AIRI
-        position: Principal Research Scientist & Team Lead
-        start_date: 2024-07
+      - company: CogAI Lab
+        position: Principal Research Scientist
+        start_date: 2025-08
         end_date: present
         location: Moscow, Russia
         highlights:
-          - Leading an 8-person research team focused on RL, LLM/multimodal agents, and multi-agent systems
-          - "Supervised ReSCALE, an RL-style tree-search method for LLM test-time reasoning that restores monotonic scaling with larger search budgets without retraining (ICAPS 2026)"
+          - "Led Decentralized Master-Mind (DMM), which scaled pathfinding to over a million concurrent agents using multi-agent RL and diffusion-inspired refinement of shared action intents"
+          - "Supervised ReSCALE, a tree-search method that consistently improves LLM reasoning as the search budget grows, without retraining (ICAPS 2026, Oral)"
+      - company: AIRI
+        position: Senior Research Scientist & Team Lead
+        start_date: 2024-07
+        end_date: 2025-08
+        location: Moscow, Russia
+        highlights:
+          - Led an 8-person team researching RL, LLM and multimodal agents, and multi-agent systems
           - "Led MAPF-GPT, a foundation model for multi-agent pathfinding with zero-shot generalization on unseen maps, outperforming state-of-the-art learnable solvers (AAAI 2025, Oral)"
 #          - "Built CrafText, an ACL 2025 benchmark for multimodal, language-guided agents in open-ended environments"
       - company: AIRI
@@ -57,9 +56,15 @@ cv:
           - "1st place at the NeurIPS 2019 MineRL Diamond Competition with a hierarchical RL approach leveraging demonstrations as human priors for long-horizon decision-making in Minecraft; first author and presenter at NeurIPS"
           - "Researched multi-agent pathfinding, model-based RL, and visual navigation, including hybrid policy learning with classical search; published in IEEE TNNLS, Knowledge-Based Systems, and Cognitive Systems Research"
 
+    Education:
+      - label: "PhD in AI & Machine Learning"
+        details: "FRC CSC RAS (defended at MIPT), Moscow, Russia, 2023"
+      - label: "MS (2015–2017) and BS (2011–2015) in Computer Science"
+        details: "Rybinsk State Aviation Technical University"
+
     Technical Skills:
       - label: Core Stack
-        details: Python, PyTorch, JAX, C++
+        details: Python, PyTorch, JAX, C++, Codex, Claude Code
       - label: Research Areas
         details: Reinforcement Learning, Multi-Agent Systems, Planning/Search, Imitation Learning
       - label: LLM/Agent Systems
@@ -70,7 +75,7 @@ cv:
         details: English (advanced), Russian (native)
 
     Achievements & Service:
-      - bullet: "[Yandex ML-Prize 2024](https://ml-prize.yandex.ru/) -- awarded for research in Reinforcement Learning, Multi-Agent RL, and Multi-Agent Systems"
+      - bullet: "[Yandex ML Prize 2024](https://www.yandex.ru/company/news/02-31-10-2024) -- awarded for research in Reinforcement Learning, Multi-Agent RL, and Multi-Agent Systems"
       - bullet: "[NeurIPS 2019 MineRL Diamond Competition](https://www.aicrowd.com/challenges/neurips-2019-minerl-competition/leaderboards) -- 1st place in long-horizon RL from demonstrations (2019)"
       - bullet: "Co-organizer & RL Track Lead: [IGLU Competition](https://www.iglu-contest.net/) at NeurIPS 2021-2022 on grounded instruction following"
       - bullet: "Reviewing: NeurIPS, ICML, AAAI, ICLR, ACL Rolling Review, JAIR, Nature Communications"
@@ -78,7 +83,7 @@ cv:
 
     Teaching:
       - label: "MSU AI Masters -- Advanced Reinforcement Learning"
-        details: "Lecturer (2025 -- present)"
+        details: "Lecturer (2025 -- 2026)"
       - label: "MIPT -- Reinforcement Learning, Software Tools for AI"
         details: "Assistant Lecturer (2020 -- 2022)"
       - label: "HSE -- Applied Problems of Data Analysis"
@@ -106,7 +111,7 @@ cv:
           - Konstantin Yakovlev
           - Aleksandr Panov
           - "**Alexey Skrynnik**"
-        journal: AAMAS 2026
+        journal: AAMAS 2026 (Oral)
         date: 2026-05
         url: https://doi.org/10.65109/BWFP6427
       - title: "Revisiting Tree Search for LLMs: Gumbel and Sequential Halving for Budget-Scalable Reasoning"
@@ -115,7 +120,7 @@ cv:
           - Yury Kuratov
           - Aleksandr Panov
           - "**Alexey Skrynnik**"
-        journal: ICAPS 2026
+        journal: ICAPS 2026 (Oral)
         date: 2026-03
         url: https://arxiv.org/abs/2603.21162
       - title: "Camar: Continuous Actions Multi-Agent Routing"
@@ -145,7 +150,7 @@ cv:
           - Aleksandr Panov
         journal: ICLR 2025
         date: 2025-05
-        url: https://openreview.net/forum?id=6VgwE2tCRm
+        url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/10d19888a94f390e58f922ab3937e1cb-Abstract-Conference.html
       - title: "MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at Scale"
         authors:
           - Anton Andreychuk
@@ -230,11 +235,19 @@ cv:
 
 design:
   theme: sb2nov
+  entries:
+    date_and_location_width: 3.45cm
+  sections:
+    space_between_regular_entries: 0.65em
   typography:
     font_size:
       name: 22pt
   header:
+    space_below_name: 0.4cm
+    space_below_headline: 0.4cm
+    space_below_connections: 0.4cm
     connections:
+      separator: ""
       show_icons: true
       display_urls_instead_of_usernames: false
   page:
